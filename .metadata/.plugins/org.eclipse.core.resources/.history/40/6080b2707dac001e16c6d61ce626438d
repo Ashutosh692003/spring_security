@@ -1,0 +1,21 @@
+package com.example.security.control;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class control {
+	
+	   
+	  @GetMapping("/home")
+	 public String home() {
+		  return "Welcome To Home Page......";
+	 }
+	  
+	   @GetMapping("/login")
+	    public String login() {
+		    return "Inside Login..........";
+	   }
+
+}
+
